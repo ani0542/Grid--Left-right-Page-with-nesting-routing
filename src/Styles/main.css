@@ -1,0 +1,178 @@
+@import "./header.css";
+@import "./headerbox.css";
+@import "./MainSection.css";
+@import "./uppermain.css";
+@import "./highersecons.css";
+@import "./seceducation.css";
+
+
+/* //css variables */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+body {
+    margin: 0;
+    /* font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff; */
+    background: #eee;
+    font-size: 1.1em;
+    line-height: 1.5;
+    /* text-align: center; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+
+  .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF6347;
+    color: #fff;
+    text-decoration: none;
+    padding: .5em 1em;
+    margin: 0.5em 0;
+    width: 100%;
+    max-height: 2.5rem;
+    
+  }
+
+  .btnd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0018F9;
+    color: #fff;
+    text-decoration: none;
+    padding: .5em 1em;
+    margin: 0.5em 0;
+    width: 100%;
+    max-height: 2.5rem;
+  }
+
+
+  .btns:hover{
+    color: var(--light);
+  }
+
+  .btnd:hover{
+    color: var(--light);
+  }
+
+
+  @media (max-width: 700px) {
+    .main-nav ul {
+      grid-template-columns: 1fr;
+    }
+    .rows {   
+      flex-direction: column;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  /* .scrollbar{
+    margin-left: 30px;
+    float: left;
+    height: 300px;
+    width: 65px;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+    background-color: #f5f5f5;
+
+  }
+
+  .overflow{
+    min-height: 450px;
+
+  }
+
+
+  .wrapper{
+    text-align: center;
+    width: 500px;
+    margin: auto;
+  } */
+
+
+
+
+  .wrapper {
+    display: grid;
+    grid-gap: 20px;
+  }
+
+
+
+
+
+
+
+
+  
+  @media (max-width: 700px) {
+    .top-container {
+      /* grid-template-areas:
+        'showcase showcase'
+        'top-box-a top-box-b';
+    } */
+    grid-template-areas:
+    'showcase'
+    'top-box-a'
+    'top-box-b';
+}
+
+    .showcase h1 {
+      font-size: 2.5rem;
+    }
+
+    .main-nav ul {
+      grid-template-columns: 1fr;
+    }
+  
+
+    .info {
+      grid-template-columns: 1fr;
+    }
+   
+    .info .btn {
+      display: block;
+      text-align: center;
+      /* margin: auto; */
+    }
+  }
+
+  
+  @media (max-width: 500px) {
+    .top-container {
+      grid-template-areas:
+        'showcase'
+        'top-box-a'
+        'top-box-b';
+    }
+  }
